@@ -9,18 +9,19 @@
         h1 {
             color: white;
         }
+        label {
+            color: white;
+        }
         .image-container {
             position: relative;
             display: inline-block;
             margin: 10px;
         }
-
         .image-container img {
             width: 233px;
             height: 350px;
             display: block;
         }
-
         .checkbox {
             accent-color: red;
             position: absolute;
@@ -28,7 +29,14 @@
             left: 10px;
             transform: scale(1.5);
         }
-
+        .checkbox2 {
+            accent-color: gold;
+            position: absolute;
+            top: 10px;
+            left: 35px;
+            transform: scale(1.5);
+            display: none;
+        }
         .link {
             display: block;
             margin-top: -24px;
@@ -36,7 +44,6 @@
             text-align: right;
             text-decoration: none;
         }
-
         .generation {
           display: block;
           padding: 2px;
@@ -46,10 +53,14 @@
 <body>
     <h1>Catalog your Lego Games</h1>
 
+    <label><input type="radio" name="showCheckbox" id="showFirstCheckboxRadio" value="first">1 checkbox</label>
+    <label><input type="radio" name="showCheckbox" id="showBothCheckboxesRadio" value="both">2 checkboxes</label>
+
     <div class="image-row">
         <div class="image-container">
             <img src="images/LEGOSkywalkerSaga.png">
             <input type="checkbox" class="checkbox" id="LEGOSkywalkerSaga">
+            <input type="checkbox" class="checkbox2" id="LEGOSkywalkerSaga">
             <a href="https://store.steampowered.com/app/920210" class="link">🔗</a>
             <a class="generation" style="background-color: rgb(255, 145, 0);" title="NTT"></a>
         </div>
@@ -57,6 +68,7 @@
         <div class="image-container">
             <img src="images/LEGOMovie2.png">
             <input type="checkbox" class="checkbox" id="LEGOMovie2">
+            <input type="checkbox" class="checkbox2" id="LEGOMovie2">
             <a href="https://store.steampowered.com/app/881320" class="link">🔗</a>
             <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -64,6 +76,7 @@
         <div class="image-container">
             <img src="images/LEGODCSuperVillains.png">
             <input type="checkbox" class="checkbox" id="LEGODCSuperVillains">
+            <input type="checkbox" class="checkbox2" id="LEGODCSuperVillains">
             <a href="https://store.steampowered.com/app/829110" class="link">🔗</a>
             <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -71,6 +84,7 @@
         <div class="image-container">
             <img src="images/LEGOIncredibles.png">
             <input type="checkbox" class="checkbox" id="LEGOIncredibles">
+            <input type="checkbox" class="checkbox2" id="LEGOIncredibles">
             <a href="https://store.steampowered.com/app/818320" class="link">🔗</a>
             <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -78,6 +92,7 @@
         <div class="image-container">
             <img src="images/LEGOMarvelSuperHeroes2.png">
             <input type="checkbox" class="checkbox" id="LEGOMarvelSuperHeroes2">
+            <input type="checkbox" class="checkbox2" id="LEGOMarvelSuperHeroes2">
             <a href="https://store.steampowered.com/app/647830" class="link">🔗</a>
             <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -85,6 +100,7 @@
         <div class="image-container">
             <img src="images/LEGONINJAGO.png">
             <input type="checkbox" class="checkbox" id="LEGONINJAGO">
+            <input type="checkbox" class="checkbox2" id="LEGONINJAGO">
             <a href="https://store.steampowered.com/app/640590" class="link">🔗</a>
             <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -92,6 +108,7 @@
         <div class="image-container">
           <img src="images/LEGOWorlds.png">
           <input type="checkbox" class="checkbox" id="LEGOWorlds">
+          <input type="checkbox" class="checkbox2" id="LEGOWorlds">
           <a href="https://store.steampowered.com/app/332310" class="link">🔗</a>
           <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -99,6 +116,7 @@
         <div class="image-container">
           <img src="images/LEGOStarWarsTFA.png">
           <input type="checkbox" class="checkbox" id="LEGOStarWarsTFA">
+          <input type="checkbox" class="checkbox2" id="LEGOStarWarsTFA">
           <a href="https://store.steampowered.com/app/438640" class="link">🔗</a>
           <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -106,6 +124,7 @@
         <div class="image-container">
           <img src="images/LEGOAvengers.png">
           <input type="checkbox" class="checkbox" id="LEGOAvengers">
+          <input type="checkbox" class="checkbox2" id="LEGOAvengers">
           <a href="https://store.steampowered.com/app/405310" class="link">🔗</a>
           <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -113,6 +132,7 @@
         <div class="image-container">
           <img src="images/LEGOJurassicWorld.png">
           <input type="checkbox" class="checkbox" id="LEGOJurassicWorld">
+          <input type="checkbox" class="checkbox2" id="LEGOJurassicWorld">
           <a href="https://store.steampowered.com/app/352400" class="link">🔗</a>
           <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
         </div>
@@ -120,6 +140,7 @@
       <div class="image-container">
           <img src="images/LEGOBatman3.png">
           <input type="checkbox" class="checkbox" id="LEGOBatman3">
+          <input type="checkbox" class="checkbox2" id="LEGOBatman3">
           <a href="https://store.steampowered.com/app/313690" class="link">🔗</a>
           <a class="generation" style="background-color: rgb(60, 0, 255);" title="DX11"></a>
       </div>
@@ -127,6 +148,7 @@
       <div class="image-container">
         <img src="images/LEGOHobbit.png">
         <input type="checkbox" class="checkbox" id="LEGOHobbit">
+        <input type="checkbox" class="checkbox2" id="LEGOHobbit">
         <a href="https://store.steampowered.com/app/285160" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -134,6 +156,7 @@
       <div class="image-container">
         <img src="images/LEGOMovie1.png">
         <input type="checkbox" class="checkbox" id="LEGOMovie1">
+        <input type="checkbox" class="checkbox2" id="LEGOMovie1">
         <a href="https://store.steampowered.com/app/267530" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -141,6 +164,7 @@
       <div class="image-container">
         <img src="images/LEGOMarvel1.png">
         <input type="checkbox" class="checkbox" id="LEGOMarvel1">
+        <input type="checkbox" class="checkbox2" id="LEGOMarvel1">
         <a href="https://store.steampowered.com/app/249130" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -148,6 +172,7 @@
       <div class="image-container">
         <img src="images/LEGOCity.png">
         <input type="checkbox" class="checkbox" id="LEGOCity">
+        <input type="checkbox" class="checkbox2" id="LEGOCity">
         <a href="https://store.steampowered.com/app/578330" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG (+DX11)"></a>
       </div>
@@ -155,6 +180,7 @@
       <div class="image-container">
           <img src="images/LEGOLOTR.png">
           <input type="checkbox" class="checkbox" id="LEGOLOTR">
+          <input type="checkbox" class="checkbox2" id="LEGOLOTR">
           <a href="https://store.steampowered.com/app/214510" class="link">🔗</a>
           <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -162,6 +188,7 @@
       <div class="image-container">
         <img src="images/LEGOBatman2.png">
         <input type="checkbox" class="checkbox" id="LEGOBatman2">
+        <input type="checkbox" class="checkbox2" id="LEGOBatman2">
         <a href="https://store.steampowered.com/app/213330" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -169,6 +196,7 @@
       <div class="image-container">
         <img src="images/LEGOHarryPotter5-7.png">
         <input type="checkbox" class="checkbox" id="LEGOHarryPotter5-7">
+        <input type="checkbox" class="checkbox2" id="LEGOHarryPotter5-7">
         <a href="https://store.steampowered.com/app/204120" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -176,6 +204,7 @@
       <div class="image-container">
         <img src="images/LEGO-POTC.png">
         <input type="checkbox" class="checkbox" id="LEGO-POTC">
+        <input type="checkbox" class="checkbox2" id="LEGO-POTC">
         <a href="https://store.steampowered.com/app/311770" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -183,6 +212,7 @@
       <div class="image-container">
         <img src="images/LSWIII.png">
         <input type="checkbox" class="checkbox" id="LSWIII">
+        <input type="checkbox" class="checkbox2" id="LSWIII">
         <a href="https://store.steampowered.com/app/32510" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -190,6 +220,7 @@
       <div class="image-container">
           <img src="images/LEGOHarryPotter1-4.png">
           <input type="checkbox" class="checkbox" id="LEGOHarryPotter1-4">
+          <input type="checkbox" class="checkbox2" id="LEGOHarryPotter1-4">
           <a href="https://store.steampowered.com/app/21130" class="link">🔗</a>
           <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -197,6 +228,7 @@
       <div class="image-container">
         <img src="images/LEGOIndy2.png">
         <input type="checkbox" class="checkbox" id="LEGOIndy2">
+        <input type="checkbox" class="checkbox2" id="LEGOIndy2">
         <a href="https://store.steampowered.com/app/32450" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(0, 255, 47);" title="NXG"></a>
       </div>
@@ -204,6 +236,7 @@
       <div class="image-container">
         <img src="images/LEGOBatman1.png">
         <input type="checkbox" class="checkbox" id="LEGOBatman1">
+        <input type="checkbox" class="checkbox2" id="LEGOBatman1">
         <a href="https://store.steampowered.com/app/21000" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(255, 0, 195);" title="CLASSIC"></a>
       </div>
@@ -211,6 +244,7 @@
       <div class="image-container">
         <img src="images/LEGOIndy1.png">
         <input type="checkbox" class="checkbox" id="LEGOIndy1">
+        <input type="checkbox" class="checkbox2" id="LEGOIndy1">
         <a href="https://store.steampowered.com/app/32330" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(255, 0, 195);" title="CLASSIC"></a>
       </div>
@@ -218,33 +252,88 @@
       <div class="image-container">
         <img src="images/LEGOSWCS.png">
         <input type="checkbox" class="checkbox" id="LEGOSWCS">
+        <input type="checkbox" class="checkbox2" id="LEGOSWCS">
         <a href="https://store.steampowered.com/app/32440" class="link">🔗</a>
         <a class="generation" style="background-color: rgb(255, 0, 195);" title="CLASSIC"></a>
       </div>
     </div>
 
+
+
     <script>
-        function saveCheckboxState() {
-            const checkboxes = document.querySelectorAll('.checkbox');
-            checkboxes.forEach((checkbox, index) => {
-                localStorage.setItem(`checkbox${index + 1}`, checkbox.checked);
-            });
-        }
+      function saveCheckboxState() {
+          const checkboxes = document.querySelectorAll('.checkbox, .checkbox2');
+          checkboxes.forEach((checkbox, index) => {
+              localStorage.setItem(`checkbox${index + 1}`, checkbox.checked);
+          });
+      }
 
-        function loadCheckboxState() {
-            const checkboxes = document.querySelectorAll('.checkbox');
-            checkboxes.forEach((checkbox, index) => {
-                const checked = localStorage.getItem(`checkbox${index + 1}`) === 'true';
-                checkbox.checked = checked;
-            });
-        }
+      function loadCheckboxState() {
+          const checkboxes = document.querySelectorAll('.checkbox, .checkbox2');
+          checkboxes.forEach((checkbox, index) => {
+              const checked = localStorage.getItem(`checkbox${index + 1}`) === 'true';
+              checkbox.checked = checked;
+          });
+      }
 
-        document.addEventListener('DOMContentLoaded', loadCheckboxState);
+      document.addEventListener('DOMContentLoaded', loadCheckboxState);
 
-        const checkboxes = document.querySelectorAll('.checkbox');
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', saveCheckboxState);
-        });
-    </script>
+      const checkboxes = document.querySelectorAll('.checkbox, .checkbox2');
+      checkboxes.forEach(checkbox => {
+          checkbox.addEventListener('change', saveCheckboxState);
+      });
+
+      const showFirstCheckboxRadio = document.getElementById('showFirstCheckboxRadio');
+      const showBothCheckboxesRadio = document.getElementById('showBothCheckboxesRadio');
+      const checkboxElements = document.querySelectorAll('.checkbox');
+      const checkbox2Elements = document.querySelectorAll('.checkbox2');
+
+      function updateCheckboxVisibility() {
+          if (showFirstCheckboxRadio.checked) {
+              checkboxElements.forEach(checkbox => {
+                  checkbox.style.display = 'block';
+              });
+              checkbox2Elements.forEach(checkbox => {
+                  checkbox.style.display = 'none';
+              });
+          } else if (showBothCheckboxesRadio.checked) {
+              checkboxElements.forEach(checkbox => {
+                  checkbox.style.display = 'block';
+              });
+              checkbox2Elements.forEach(checkbox => {
+                  checkbox.style.display = 'block';
+              });
+          }
+      }
+
+      function saveRadioState() {
+          const selectedRadio = document.querySelector('input[name="showCheckbox"]:checked').value;
+          localStorage.setItem('selectedRadio', selectedRadio);
+      }
+
+      function loadRadioState() {
+          const savedRadio = localStorage.getItem('selectedRadio');
+
+          if (!savedRadio) {
+              showFirstCheckboxRadio.checked = true;
+          } else if (savedRadio === 'first') {
+              showFirstCheckboxRadio.checked = true;
+          } else if (savedRadio === 'both') {
+              showBothCheckboxesRadio.checked = true;
+          }
+          updateCheckboxVisibility();
+      }
+
+      showFirstCheckboxRadio.addEventListener('change', () => {
+          updateCheckboxVisibility();
+          saveRadioState();
+      });
+      showBothCheckboxesRadio.addEventListener('change', () => {
+          updateCheckboxVisibility();
+          saveRadioState();
+      });
+
+      document.addEventListener('DOMContentLoaded', loadRadioState);
+  </script>
 </body>
 </html>
